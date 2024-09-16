@@ -1,3 +1,3 @@
-# luvthapa_01
-This is my first Git repository.
+# luv's app (miscellaneous app)
+<h1>This is my first app</h1>  
 Author - Luv Thapa
