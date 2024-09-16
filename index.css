@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#splash-screen {
+    text-align: center;
+    padding-top: 50%;
+}
+
+#splash-screen img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+#home-page {
+    display: none;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+#dropdown-button {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#dropdown-menu {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 1000;
+}
+
+#dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#dropdown-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#dropdown-menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.section h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+.filter-button {
+    float: right;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.thumbnails img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.headlines {
+    margin-top: 10px;
+}
+
+.headlines p {
+    margin: 5px 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 2000;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+#popup-close {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+}
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.dark-theme header,
+.dark-theme .section {
+    background-color: #333;
+    color: white;
+}
+
+.dark-theme #dropdown-menu {
+    background-color: #444;
+}
+
+.dark-theme .popup {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-theme #popup-close {
+    color: white;
+}
+
+.dark-theme .popup h2,
+.dark-theme .popup p {
+    color: white;
+}

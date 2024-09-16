@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Luv's App</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div id="splash-screen">
+        <h1>WELCOME! KASTO CHA?</h1>
+        <p>Created by Luv</p>
+        <img src="img/logo.png" alt="Luv Logo">
+    </div>
+    <div id="home-page" style="display: none;">
+        <header>
+            <h1>TEST MY APP</h1>
+            <button id="dropdown-button">☰</button>
+        </header>
+        <nav id="dropdown-menu" style="display: none;">
+            <ul>
+                <li><a href="#" id="home-link">HOME</a></li>
+                <li><a href="#" id="about-link">ABOUT</a></li>
+                <li><a href="#" id="theme-link">THEME</a></li>
+            </ul>
+        </nav>
+        <div class="section" id="movies-section">
+            <h2>MOVIES 2024 (scroll left/right for more..)</h2>
+            <div class="thumbnails" id="movie-thumbnails">
+                <!-- Movie thumbnails will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="section" id="web-series-section">
+            <h2>WEB SERIES 2024 (scroll left/right for more..)</h2>
+            <div class="thumbnails" id="web-series-thumbnails">
+                <!-- Web series thumbnails will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="section" id="gk-section">
+            <h2>General Knowledge</h2>
+            <div class="headlines" id="gk-headlines">
+                <!-- Headlines will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="section" id="music-section">
+            <h2>ALL MUSIC</h2>
+            <div class="thumbnails" id="music-thumbnails">
+                <!-- Music thumbnails will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="section" id="food-recipes-section">
+            <h2>Food Recipes</h2>
+            <input type="text" id="recipe-search" placeholder="Search for recipes...">
+        </div>
+        
+        <!-- New sections -->
+        <div class="section" id="hollywood-movies-section">
+            <h2>HOLLYWOOD MOVIES 2024 (scroll left/right for more..)</h2>
+            <div class="thumbnails" id="hollywood-movie-thumbnails">
+                <!-- Hollywood movie thumbnails will be inserted here by JavaScript -->
+            </div>
+        </div>
+        <div class="section" id="hollywood-web-series-section">
+            <h2>HOLLYWOOD WEB SERIES 2024 (scroll left/right for more..)</h2>
+            <div class="thumbnails" id="hollywood-web-series-thumbnails">
+                <!-- Hollywood web series thumbnails will be inserted here by JavaScript -->
+            </div>
+        </div>
+    
+    <!-- Popup Box -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span id="popup-close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-rating"></p>
+            <p id="popup-type"></p>
+            <p id="popup-director"></p>
+            <p id="popup-releaseDate"></p>
+            <p id="popup-info"></p>
+            <p id="popup-watch"></p>
+        </div>
+    </div>
+</body>
+</html>
